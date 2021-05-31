@@ -14,7 +14,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToK
  {
  sh "${mavenHome}/bin/mvn clean package"
  }
-/*
+
  stage('ExecuteSonarQubeReport')
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -30,8 +30,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToK
  sshagent(['c9992cfd-52a6-4854-9e25-0cd0659168ba']) {
  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.108.59.225:/opt/apache-tomcat-9.0.45/webapps"
  }
- }
-*/
+
  stage('SendEmailNotification')
  {
  emailext body: '''Build Over
