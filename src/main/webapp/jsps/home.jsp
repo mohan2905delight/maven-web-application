@@ -9,8 +9,8 @@
 </head>
 </head>
 <body>
-<h1 align="center"> Great and Better</h1>
-<h1 align="center"> Hello evryone Good day </h1>
+<h1 align="center"> Ha hai</h1>
+<h1 align="center"> have a cool suset for tuesday </h1>
 <hr>
 <div style="text-align: center;">
 	<span>
