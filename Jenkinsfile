@@ -2,6 +2,7 @@
 node ('wallmart-node')
 {
 
+ 
  def mavenHome = tool name: "maven3.8.1"
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
